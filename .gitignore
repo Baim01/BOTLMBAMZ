@@ -1,0 +1,34 @@
+*File konfigurasi pribadi*
+config.json
+
+*File log*
+log.txt
+logs/
+
+*File cache*
+*pycache*
+.cache/
+
+*File pengembangan*
+*.pyc
+*.tmp
+*.bak
+
+*Folder virtual environment*
+env/
+venv/
+virtualenv/
+
+*File sistem operasi*
+.DS_Store
+Thumbs.db
+
+*File IDE*
+.vscode/
+.pycharm/
+.idea/
+
+*File lainnya*
+*.exe
+*.dll
+*.zip
