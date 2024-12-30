@@ -40,7 +40,6 @@ def test_delay(self):
 
 def test_max_attempts(self):
     self.assertEqual(MAX_ATTEMPTS, 5)
-```
 
-if *name* == '*main*':
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
