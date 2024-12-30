@@ -1,18 +1,19 @@
 import unittest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 import pyautogui
 import time
 from bot import main
 from utils import login, logout, collect_resources, upgrade_buildings, train_troops
 from config import DELAY, MAX_ATTEMPTS
 
-class TestBot(unittest.TestCase):
-
-```@patch('pyautogui')
-def test_login(self, mock_pyautogui):
-    login("username", "password")
-    mock_pyautogui.write.assert_called_with("username")
-    mock_pyautogui.press.assert_called_with('enter')
+class TestLogin(unittest.TestCase):
+    @patch('pyautogui')
+    def test_login(self, mock_pyautogui):
+        login("username", "password")
+        
+        mock_pyautogui.write.assert_called_with("username")
+        
+        mock_pyautogui.press.assert_called_with('enter')
 
 @patch('pyautogui')
 def test_logout(self, mock_pyautogui):
